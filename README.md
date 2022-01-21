@@ -1,8 +1,12 @@
 # Terraform
 
+This repo is meant a showcase for terraform in Azure.
+
+
+
 **Level 1**
 
-- Basic with only resources: network, VMs, SQL server, database ..
+- Basic resource provisioning with only resources: resource group, network, VMs, SQL server, database ..
 
 **Level 2**
 
