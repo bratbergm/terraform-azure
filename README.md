@@ -1,6 +1,6 @@
 # Terraform
 
-This repo is meant a showcase for terraform in Azure.
+This repo is meant as a showcase for terraform in Azure.
 
 
 
