@@ -8,6 +8,14 @@ This repo is meant as a showcase for terraform in Azure.
 
 - Basic resource provisioning with only resources: resource group, network, VMs, SQL server, database ..
 
+```
+📦level1
+ ┣ 📜backend.tf
+ ┣ 📜main.tf
+ ┣ 📜output.tf
+ ┗ 📜variables.tf
+```
+
 **Level 2**
 
 - Provisioning with use of modules
