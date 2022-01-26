@@ -5,7 +5,7 @@ variable "resource_group_name" {
 
 variable "location" {
   type        = string
-  default     = "norwayeast"
+  default     = ""
 }
 
 variable "vnet_name" {
@@ -19,8 +19,8 @@ variable "address_space" {
 }
 
 variable "subnet_prefixes" {
-  type        = string
-  default     = "10.0.1.0/24"
+  type        = list(string)
+  default     = ["10.0.1.0/24"]
   description = "description"
 }
 

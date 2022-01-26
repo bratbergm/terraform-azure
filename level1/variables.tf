@@ -22,8 +22,8 @@ variable "address_space" {
 }
 
 variable "subnet_prefixes" {
-  type        = string
-  default     = "10.0.1.0/24"
+  type        = list(string)
+  default     = ["10.0.1.0/24"]
   description = "description"
 }
 
@@ -64,10 +64,3 @@ variable "vm_size" {
   type        = string
   default     = "Standard_F2"
 }
-
-variable "" {
-  type        = string
-  default     = ""
-}
-
-

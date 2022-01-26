@@ -4,9 +4,9 @@ variable "resource_group_name" {
   description   = "Name of the resource group."
 }
 
-variable "resource_group_location" {
+variable "location" {
   default = "norwayeast"
-  description   = "Location of the resource group."
+  description   = "Location of the resources"
 }
 
 
