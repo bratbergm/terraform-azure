@@ -4,7 +4,7 @@ This repo is meant as a showcase for terraform in Azure.
 
 
 
-### **Level 1**
+## **Level 1**
 
 - Basic resource provisioning with only resources: resource group, network, VMs, SQL server, database ..
 
@@ -16,7 +16,7 @@ This repo is meant as a showcase for terraform in Azure.
  ┗ 📜variables.tf
 ```
 
-### **Level 2**
+## **Level 2**
 
 - The resources are separated into modules 
 - Possible to provision one module at the time *(terraform plan --target=module."declared module name"*)
@@ -54,7 +54,40 @@ This repo is meant as a showcase for terraform in Azure.
 
 ![TarraformVariablesModules](/img/TarraformVariablesModules.png)
 
-### **Level 3**
+## **Level 3**
+
+- The use of multiple environments: test/stage/prod
+- Environments are differentiated with a *.tfvars* file for each environment. The same code provisions the 3 environments, and variables in the *.tfvars* files creates differences. 
+- Provision the desired environment: *terraform plan --var-file="test/test.tfvars"*
+
+```
+📦level3
+ ┣ 📂modules
+ ┃ ┣ 📂1-vnet
+ ┃ ┃ ┣ 📜main.tf
+ ┃ ┃ ┣ 📜outputs.tf
+ ┃ ┃ ┗ 📜variables.tf
+ ┃ ┣ 📂2-vms
+ ┃ ┃ ┣ 📜main.tf
+ ┃ ┃ ┣ 📜outputs.tf
+ ┃ ┃ ┗ 📜variables.tf
+ ┃ ┗ 📂3-sql
+ ┃ ┃ ┣ 📜main.tf
+ ┃ ┃ ┣ 📜output.tf
+ ┃ ┃ ┗ 📜variables.tf
+ ┣ 📂prod
+ ┃ ┗ 📜prod.tfvars
+ ┣ 📂stage
+ ┃ ┗ 📜stage.tfvars
+ ┣ 📂test
+ ┃ ┗ 📜test.tfvars
+ ┣ 📜backend.tf
+ ┣ 📜main.tf
+ ┣ 📜output.tf
+ ┗ 📜variables.tf
+```
+
+
 
 
 
