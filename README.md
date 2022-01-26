@@ -44,11 +44,15 @@ This repo is meant as a showcase for terraform in Azure.
 
 **Variables**
 
+*"Global" variable used in a module:*
+
 ![terraformAzureVariables](/img/terraformAzureVariables.png)
 
 
 
+*Variable from VNET module used in VMs module:*
 
+![TarraformVariablesModules](/img/TarraformVariablesModules.png)
 
 ### **Level 3**
 
