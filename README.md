@@ -44,7 +44,7 @@ This repo is meant as a showcase for terraform in Azure.
 
 **Variables**
 
-![terraformAzureVariables](C:\Users\korg\Documents\git\terraformAzureVariables.png)
+![terraformAzureVariables](/img/terraformAzureVariables.png)
 
 
 
